@@ -1,1 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+section {
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #000;
+}
+
+h2 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ddd;
+  padding: 5px;
+  border: 1px solid #000;
+}
+
+/* Desktop View */
+.desktop {
+  width: 30%;
+  float: left;
+}
+
+/* Tablet View */
+@media (max-width: 991px) and (min-width: 768px) {
+  .desktop {
+    width: 48%;
+  }
+
+  .desktop:nth-child(3) {
+    clear: both;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+  .desktop {
+    width: 100%;
+    clear: both;
+  }
+}
 
